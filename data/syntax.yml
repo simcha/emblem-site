@@ -429,6 +429,18 @@
     <p>Check out this partial: {{>partialName}}</p>
 
     {{>partialName foo}}
+-
+  title: Handlebars Inner Helpers
+
+  docs: |
+
+    To invoke inner helpers, you can use the `()` syntax. Note its for Handlebars >= 1.3.
+
+  emblem: |
+    tooltiped-div tooltip=(I18n 'en.div')
+
+  html: |
+    {{tooltiped-div tooltip=(I18n 'en.div')}}
 
 -
   title: Anything wrong or missing here?
